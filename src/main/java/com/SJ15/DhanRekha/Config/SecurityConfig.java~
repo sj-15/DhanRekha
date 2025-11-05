@@ -1,0 +1,4 @@
+package com.SJ15.DhanRekha.Config;
+
+public class SecurityConfig {
+}

@@ -1,0 +1,11 @@
+package com.SJ15.DhanRekha.Repository;
+
+import com.SJ15.DhanRekha.Entity.Group;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.Optional;
+
+public interface GroupRepository extends JpaRepository<Group, Long> {
+    @Override
+    Optional<Group> findById(Long id);
+}

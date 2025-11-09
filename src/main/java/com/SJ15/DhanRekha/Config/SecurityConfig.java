@@ -14,7 +14,7 @@ public class SecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable) // disable CSRF for simplicity (important for POST testing)
                 .authorizeHttpRequests(auth -> auth
-                        .anyRequest().permitAll()  // allow all requests without authentication
+                        .anyRequest().permitAll() // allow all requests without authentication
                 );
         return http.build();
     }
